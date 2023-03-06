@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Project: Colors</title>
+
+    <style>
+    body {
+            text-align: center;
+        }
+        #btn_1{
+         background-color: #123abc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+         }
+    </style>
+
+</head>
+
+<body>
+
+<h1 style="color: red"> Main Heading</h1>
+<button id="btn_1"> Change Background Colour</button>
+
+<script>
+
+    const arrHex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+
+    document.getElementById("btn_1").addEventListener("click", changeColor);
+
+        function changeColor(){
+        let strHexColor = "#";
+            for(let i = 0; i < 6; i++){
+                strHexColor = strHexColor + arrHex[getRandomNumber()];
+            }
+            console.log(strHexColor);
+            document.body.style.backgroundColor = strHexColor;
+        }
+
+        function getRandomNumber(){
+            return Math.floor(Math.random() * arrHex.length);
+        }
+
+</script>
+</body>
+</html>
+
