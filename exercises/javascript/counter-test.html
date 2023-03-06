@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Test</title>
+
+    <style>
+       .red-text {
+            color: red;
+        }
+
+        .blue-text {
+            background-color: lightblue;
+        }
+
+        #increase {
+            padding: 4px 14px;
+            background-color: green;
+        }
+
+        #decrease {
+            padding: 4px 14px;
+            background-color: red;
+        }
+
+        #box-number {
+            padding 4px 14px;
+            background-color: yellow;
+            border: solid 1px black;
+            margin-top: 20px;
+            max-width: 120px;
+        }
+
+        #myBtn {
+            padding: 4px 14px;
+            background-color: grey;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1> Counter test </h1>
+
+    <h2 id="heading-1">Nice heading</h2>
+
+    <button id="myBtn">Click me</button>
+
+    <button id="increase" class="btn-number">Increase Number +</button>
+    <button id="decrease" class="btn-number">Decrease Number -</button>
+
+    <div id="box-number">0</div>
+
+    <script>
+
+        const myButton = document.getElementById('myBtn');
+
+        myButton.addEventListener('click', changeColor);
+
+        function changeColor(){
+            const heading = document.getElementById('heading-1');
+            // heading.style.backgroundColor = "blue";
+            // heading.style.color = "white";
+            heading.classList.add('red-text');
+            heading.classList.remove('blue-text');
+        }
+
+        const myNumberButtons = document.querySelectorAll('.btn-number');
+        console.log("Number of buttons: " + myNumberButtons.length);
+
+        myNumberButtons.forEach(function(button) {
+            button.addEventListener('click', changeNumber);
+        });
+
+
+        function changeNumber(e){
+
+             console.log(e.target.id);
+             const boxNumber = document.getElementById('box-number').textContent;
+
+             console.log("Number: " + boxNumber);
+              if(e.target.id === "increase"){
+                    document.getElementById("box-number").textContent = parseInt(boxNumber) + 1;
+              } else if(e.target.id === "decrease"){
+                    document.getElementById("box-number").textContent = parseInt(boxNumber) - 1;
+              }
+        }
+
+    </script>
+
+    <script>
+        console.log();
+
+        funtion doSomething(){
+            console.log
+        }
+
+
+    </script>
+
+
+</body>
+</html>

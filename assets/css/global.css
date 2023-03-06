@@ -1,0 +1,81 @@
+/*  ============= WEB BROWSER RESETS ============ */
+* { margin: 0; padding: 0; border: none }
+*, *::before, *::after { box-sizing: border-box }
+html { height: 100%; font-size: 100%; font: inherit; vertical-align: baseline;
+scroll-behavior: smooth; scroll-padding-top: 20px }
+body { max-width: 1600px; line-height: 1.5; margin-left: auto; margin-right: auto; 
+min-height: 100vh; text-rendering: optimizeSpeed }  
+img { width: 100%; height: auto; display: block }
+h1, h2, h3, h4 { width: 100% }
+input, button, textarea, select { font-family: 'Dancing Script', cursive;
+    font-family: 'Merriweather', serif; }
+
+/* ================= ENDS ================ */
+
+/* Desktops */
+@media (min-width: 768px) { body { padding: 4% 20% } }
+	
+/* Mobiles */
+@media (max-width: 767px) { body { padding: 12% 8% } }
+
+body { 
+    background-color: #1ac0c6;
+    color: #e74645;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 78px;
+    font-weight: normal;
+    letter-spacing: -2px;
+    margin-bottom: 12px;
+    line-height: 1.2;
+    font-family: 'Kinsta', sans-serif;
+}
+
+h2 {
+    font-size: 42px;
+    letter-spacing: 6px;
+    margin-bottom: 48px;
+    line-height: 1.2;
+    font-family: 'PT Sans', sans-serif;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 24px;
+    margin-top: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+    font-style: italic;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+a {
+    color: #e74645;
+
+}
+/* Passive link styles */
+            
+a:link, a:visited {
+    text-decoration: none;
+    padding-bottom: 2px;
+    color: blue;
+    border-bottom: solid 2px orange;
+} 
+            
+/* Interactive link styles */
+            
+a:hover, a:focus, a:active {
+    text-decoration: none; 
+    padding-bottom: 2px;
+    color: red;
+    border-bottom: solid 2px red;
+}

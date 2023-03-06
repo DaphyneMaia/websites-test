@@ -1,0 +1,77 @@
+/*  ============= WEB BROWSER RESETS ============ */
+* { margin: 0; padding: 0; border: none }
+*, *::before, *::after { box-sizing: border-box }
+html { height: 100%; font-size: 100%; font: inherit; vertical-align: baseline;
+scroll-behavior: smooth; scroll-padding-top: 20px }
+body { max-width: 1920px; line-height: 1.5; margin-left: auto; margin-right: auto; 
+min-height: 100vh; text-rendering: optimizeSpeed }  
+img { width: 100%; height: auto; display: block }
+h1, h2, h3, h4 { width: 100% }
+input, button, textarea, select { font-family: 'Dancing Script', cursive;
+    font-family: 'Raleway', sans-serif; }
+
+/* ================= ENDS ================ */
+
+body { background-color: #ffbfd1 }
+
+/* Desktops */
+@media (min-width:768px) { body { padding: 4% 20% } }
+
+/* Mobiles */
+@media (max-width:767px) { body { padding: 12% 8% } }
+
+h1 {
+    font-size: 72px;
+    margin-bottom: 56px;
+    text-align: center;
+    letter-spacing: 4px;
+    font-family: 'Raleway', sans-serif;
+    color: #5a001a;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 64px;     
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    line-height: 1.4;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #5a001a;
+}
+
+h3 {
+    font-size: 32px;
+    margin-bottom: 4px;
+    color: #5a001a;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+}
+
+p {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: 'Raleway', serif;
+    font-style: italic;
+}
+
+a { color: #5a001a}
+
+/* Passive link styles */
+            
+a:link, a:visited {
+    text-decoration: none;
+    padding-bottom: 2px;
+    color: purple;
+    border-bottom: solid 2px orange;
+} 
+            
+/* Interactive link styles */
+            
+a:hover, a:focus, a:active {
+    text-decoration: none; 
+    padding-bottom: 2px;
+    color: red;
+    border-bottom: solid 2px red;
+}
