@@ -1,0 +1,41 @@
+/* Add your custom CSS here */
+body {
+    font-family: 'Outfit', sans-serif
+}
+.section-selector-1 {
+    background-color: var(--trend-700)
+}
+
+    .section-selector-1 .badge {
+        background-color: var(--trend-700)
+    }
+
+    .section-selector-1 .badge {
+        color: var(--slate-050)
+    }
+.section-selector-2 {
+    background-color: var(--trend-800)
+}
+
+.section-selector-3 {
+    background-color: var(--trend-700)
+}
+.section-selector-2 {
+    background-color: var(--trend-800)
+}
+.section-selector-1 {
+    background-color: var(--trend-700)
+}
+
+    .section-selector-1 div[class^='flex-cols-'] div[class^='col-'] figure.icon {
+        color: var(--slate-100)
+    }
+
+    .section-selector-1 h2, .section-selector-2 h2 {font-weight: 400}
+
+    a:link, a:visited {
+        text-decoration: none;
+        padding-bottom: 2px;
+        color: purple;
+        border-bottom: solid 2px orange;}
+
